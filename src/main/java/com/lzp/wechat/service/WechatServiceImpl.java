@@ -385,9 +385,7 @@ public class WechatServiceImpl implements WechatService {
 						LOGGER.info("配置拦截的用户：" + "FromUserName：" + (String)msg.getString("FromUserName") + "\nWeChatId：" + WeChatId  + "\n" + name + ": " + content + "\n文本类型：" + msgType);
 						continue;
 					} else if (msg.getString("FromUserName").equals(wechatMeta.getUser().getString("UserName"))) {
-//						continue;
-						String ans = robot.talk(content);
-						webwxsendmsg(wechatMeta, ans, msg.getString("FromUserName"));
+						continue;
 					} else if (msg.getString("ToUserName").indexOf("@@") != -1) {
 						String[] peopleContent = content.split(":<br/>");
 						LOGGER.info("|" + name + "| " + peopleContent[0] + ":\n" + peopleContent[1].replace("<br/>", "\n"));

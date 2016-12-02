@@ -6,7 +6,7 @@ wechat-robot是基于微信网页版协议开发的普通微信号机器人程�
 
 ## 使用
 
-直接运行 `me.biezhi.wechat.Application` 中的main函数
+直接运行 `com.lzp.wechat.Application` 中的main函数
 
 ## 机器人接口申请地址 (申请后在config.properties文件中配置)
 
